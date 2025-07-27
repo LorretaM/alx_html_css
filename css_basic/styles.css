@@ -1,0 +1,36 @@
+/* Make the body a flex container with vertical stacking */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+
+/* Main should be a flex container with horizontal stacking */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Let it grow to fill available space */
+}
+
+/* Article takes 2/3 of the width */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Optional styles to visually separate sections */
+header, footer {
+  padding: 10px;
+  background-color: #ccc;
+  text-align: center;
+}
