@@ -5,11 +5,23 @@ body {
 }
 
 main {
-  max-width: 1000px;
-  margin: 20px auto;
+  display: flex;
+}
+
+article {
+  flex: 2;
   padding: 20px;
 }
 
-h1, h2, h3 {
-  color: #3f16f5;
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
 }
